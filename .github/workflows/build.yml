@@ -16,9 +16,9 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
       - name: Build with Gradle
-        uses: gradle/gradle-build-action@v2.2.1
+        uses: gradle/gradle-build-action@v2.4.2
         with:
-          gradle-version: 7.4.2
+          gradle-version: 8.1.1
           arguments: build
 
 
