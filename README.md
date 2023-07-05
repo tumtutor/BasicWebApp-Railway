@@ -26,10 +26,11 @@ Note: in this guide, we will be using 0.0.1 as our tag, this will simplify the p
 - If you are using Mac/Linux: edit the `build.sh` file according to the instructions in the file.
 - If you are using Windows: edit the `build.bat` file according to the instructions in the file.
 - Run the script to build the Docker image. You can do this by running `./build.sh` (Mac/Linux) or `build.bat` (Windows).
+Note: you can safely ignore the line containing `ERROR: context builder cannot be removed, run \`docker context rm default\` to remove this content`
 - If the build is successful, you should see the image in your Docker Hub repository, at [https://hub.docker.com/repository/docker/your-username/basic-web-app](https://hub.docker.com/repository/docker/your-username/basic-web-app). In our example, it is at [https://hub.docker.com/repository/docker/anontutor/basic-web-app](https://hub.docker.com/repository/docker/anontutor/basic-web-app).
 
 ### 4. Deploying to Render
-- Create a new Web Service and choose `Deploy an existing image from a registry`
+- Create a new Web Service at [https://dashboard.render.com/](https://dashboard.render.com/) and choose `Deploy an existing image from a registry`
 - The image url should have the following format: `your-username/basic-web-app:0.0.1`. In our example, it is `anontutor/basic-web-app:0.0.1`.
 - Give your Web Service a name, for example `basic-web-app` and for the region select `Frankfurt`
 - Wait for the deployment to finish and you are done!
