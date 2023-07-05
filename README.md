@@ -22,6 +22,7 @@ It’s a Java / Gradle project.
 
 Note: in this guide, we will be using 0.0.1 as our tag, this will simplify the process, but in a real world scenario, you can use any tag you like.
 - Create a new Docker repository in Docker Hub. You can name it whatever you like, just make sure to remember the name (you will need it later) and make the repository public. In our example, we will call it `anontutor/basic-web-app`.
+- Make sure that you are logged into your Docker account by running `docker login`.
 - If you are using Mac/Linux: edit the `build.sh` file according to the instructions in the file.
 - If you are using Windows: edit the `build.bat` file according to the instructions in the file.
 - Run the script to build the Docker image. You can do this by running `./build.sh` (Mac/Linux) or `build.bat` (Windows).
